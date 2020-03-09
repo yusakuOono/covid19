@@ -5,7 +5,6 @@
       <h2 class="Flow-Heading-Title">
         新型コロナウイルス感染症が心配なときに
       </h2>
-      <PrinterButton :wrapper-class="'Flow-PullRight'" />
     </div>
     <div class="Flow-Card">
       <h2>
@@ -216,10 +215,9 @@
 
 <script>
 import CovidIcon from '@/static/covid.svg'
-import PrinterButton from '@/components/PrinterButton'
 import DesktopFlowSvg from '@/components/DesktopFlowSvg.vue'
 export default {
-  components: { CovidIcon, PrinterButton, DesktopFlowSvg },
+  components: { CovidIcon, DesktopFlowSvg },
   head() {
     return {
       title: '新型コロナウイルス感染症が心配なときに'
@@ -270,7 +268,7 @@ export default {
       padding: 30px 20px;
       margin-bottom: 20px;
       &.Flat {
-        background-color: $gray-5;
+        background-color: $gray-4;
       }
       .TelLink {
         width: 80%;
@@ -300,7 +298,7 @@ export default {
         padding: 12px 0;
         border-width: 0.5px 0;
         border-style: solid;
-        border-color: $gray-4;
+        border-color: $gray-3;
         .Heijitsu {
           width: 70%;
           margin-right: 5px;
@@ -338,9 +336,6 @@ export default {
         color: $green-1 !important;
       }
     }
-  }
-  &-PullRight {
-    margin: 0 0 0 auto;
   }
 }
 @include largerThan($medium) {

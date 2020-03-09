@@ -88,10 +88,6 @@ const config: Configuration = {
     {
       src: '@/plugins/vue-chart.ts',
       ssr: true
-    },
-    {
-      src: '@/plugins/vuetify.ts',
-      ssr: true
     }
   ],
   /*
@@ -144,9 +140,7 @@ const config: Configuration = {
    */
   vuetify: {
     customVariables: ['~/assets/variables.scss'],
-    defaultAssets: {
-      icons: false
-    }
+    theme: {}
   },
   googleAnalytics: {
     id: 'UA-159417676-1'
