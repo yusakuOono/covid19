@@ -84,6 +84,7 @@
           <HouseIcon />
           <p>
             自宅で
+            <br />
             安静に過ごす
           </p>
         </div>
@@ -91,11 +92,12 @@
           <HotelIcon />
           <p>
             一般の
+            <br />
             医療機関を受診
           </p>
         </div>
       </div>
-      <div　:class="$style.AccordingNotBox">
+      <div :class="$style.AccordingNotBox">
         <p>
           症状がよくならない場合は
           <br />
@@ -114,7 +116,7 @@ import GreenArrow from '@/static/flow/arrow_forward_green-24px.svg'
 import HouseIcon from '@/static/flow/house-24px.svg'
 import HotelIcon from '@/static/flow/apartment-24px.svg'
 export default {
-  components: { ArrowIcon,HouseIcon,HotelIcon,GreenArrow }
+  components: { ArrowIcon, HouseIcon, HotelIcon, GreenArrow }
 }
 </script>
 
@@ -125,139 +127,138 @@ export default {
   padding: 30px 20px;
   margin-bottom: 20px;
   font-weight: bold;
-  p{
+  p {
     margin-bottom: 0;
   }
-  a{
+  a {
     text-decoration: none;
     color: $gray-1;
   }
   &Head {
-    h3{
+    h3 {
       color: $green-1;
       @include font-size(22);
       margin-bottom: 24px;
-      @media only screen and (max-width:320px){
+      @media only screen and (max-width: 320px) {
         @include font-size(18);
       }
-      p{
+      p {
         @include font-size(18);
       }
     }
-    dl{
+    dl {
       @include font-size(16);
       color: $gray-2;
       line-height: 1.4;
       margin-bottom: 8px;
-      dt{
+      dt {
         @include font-size(40);
       }
     }
-    &Size{
+    &Size {
       @include font-size(20);
       width: 54%;
       margin: auto;
-      @media only screen and (max-width:320px){
+      @media only screen and (max-width: 320px) {
         width: 70%;
       }
     }
-    &Box{
+    &Box {
       background: $gray-2;
       color: $white;
       border-radius: 4px;
       padding: 12px;
       margin-bottom: 12px;
-      p{
+      p {
         @include font-size(14);
       }
     }
   }
-  &Examine{
+  &Examine {
     display: flex;
     justify-content: center;
     border-bottom: 1px solid $gray-4;
     padding-bottom: 20px;
     margin-bottom: 12px;
-    &Item{
+    &Item {
       flex-basis: 48%;
       box-shadow: -1px 1px 4px 1px rgba(0, 0, 0, 0.2);
       border-radius: 4px;
       padding: 24px 8px 48px;
       line-height: 1.2;
-      p{
+      p {
         @include font-size(16);
         color: $gray-2;
         position: relative;
-        strong{
+        strong {
           @include font-size(24);
         }
-        svg{
+        svg {
           position: absolute;
           width: 36px;
           height: 36px;
           top: 100%;
           left: 50%;
-          transform: translate(-50%,0) rotate(90deg);
+          transform: translate(-50%, 0) rotate(90deg);
         }
       }
-      &Pdg{
+      &Pdg {
         padding-bottom: 10px;
       }
-      &:first-child{
+      &:first-child {
         margin-right: 2%;
       }
-      &:last-child{
+      &:last-child {
         margin-left: 2%;
-        background-color: #FFE200;
+        background-color: #ffe200;
       }
     }
   }
-  &Not{
-    &Flex{
+  &Not {
+    &Flex {
       display: flex;
       margin-bottom: 12px;
-      div{
+      div {
         flex-basis: 48%;
-        border:2px solid $gray-4;
+        border: 2px solid $gray-4;
         border-radius: 4px;
         padding: 40px 8px 18px;
         line-height: 1.2;
         color: $gray-1;
         position: relative;
-        &:first-child{
+        &:first-child {
           margin-right: 2%;
         }
-        &:last-child{
+        &:last-child {
           margin-left: 2%;
         }
-        svg{
+        svg {
           position: absolute;
           top: 24%;
           left: 50%;
-          transform: translate(-50%,-50%);
+          transform: translate(-50%, -50%);
           width: 32px;
           height: 32px;
         }
-        p{
-          white-space: pre-line;
+        p {
           color: $gray-2;
           @include font-size(14);
         }
       }
     }
-    &Box{
+    &Box {
       border: 2px solid $green-1;
       border-radius: 4px;
       color: $gray-2;
-      p{
+      p {
         padding: 8px 0;
         @include font-size(16);
-        @media only screen and (max-width:320px){
+        @media only screen and (max-width: 320px) {
           @include font-size(14);
         }
-        strong{
+        strong {
           @include font-size(22);
-          @media only screen and (max-width:320px){
+          @media only screen and (max-width: 320px) {
             @include font-size(16);
           }
         }
